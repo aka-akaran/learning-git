@@ -1,0 +1,8 @@
+git init : Create .git
+git status : shows the modified but not committed files
+git add . : commit all files to the git repository
+git add 'fileName' : commit the specific file to the git repository
+git commit -m "Commit Title" -m "Commit Description"
+//-m stands for message
+//while commiting file in git you must add "Commit Title" and "Commit Description"
+// so that anybody can knoow what changes you have made.
