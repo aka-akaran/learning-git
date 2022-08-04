@@ -2,9 +2,19 @@ git init : Create .git
 git status : shows the modified but not committed files
 git add . : commit all files to the git repository
 git add 'fileName' : commit the specific file to the git repository
+
 git commit -m "Commit Title" -m "Commit Description"
 //-m stands for message
 //while commiting file in git you must add "Commit Title" and "Commit Description"
 // so that anybody can knoow what changes you have made.
 
 git push : push commited files from locally to the git online
+$ ssh-keygen -t ed25519 -C "your_email@example.com" : Create key via Git Bash
+ssh-keygen -t rsa -b 4096 -C "example@gamil.com" :  If you are using a legacy system that doesn't support the Ed25519 algorithm, use: 
+ls | grep 'keyname' : find the key via keyname that you have created so far
+keyname.pub : is the public key
+keyname : is private key -> Keep private key secure on local machine
+cat 'keyname'.pub : shows the public key
+
+ssh-add ~/'keyname' : Key Identity Added
+
